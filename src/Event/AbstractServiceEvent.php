@@ -21,7 +21,7 @@ use Zend\EventManager\EventInterface;
  *
  * @package AdamiecRadek\DDDBricksZF2\Event
  */
-abstract class AbstractServiceEvent
+abstract class AbstractServiceEvent extends AbstractEvent
 {
     /**
      * @var array
