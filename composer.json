@@ -17,7 +17,7 @@
     },
     "autoload"         : {
         "psr-4": {
-            "AdamiecRadek\\DDDBricksZF2": "src/"
+            "AdamiecRadek\\DDDBricksZF2\\": "src/"
         }
     }
 }
