@@ -11,9 +11,9 @@ namespace AdamiecRadek\DDDBricksZF2\Event;
 /**
  * Interface DomainEventInterface
  *
- * @package AdamiecRadek\Event
+ * @package AdamiecRadek\DDDBricksZF2\Event
  */
-interface DomainEventInterface
+interface EventInterface
 {
     /**
      * @return string

@@ -9,6 +9,7 @@ namespace AdamiecRadek\DDDBricksZF2\Event;
 
 
 use AGmakonts\DddBricks\Entity\EntityInterface;
+use AGmakonts\DddBricks\Service\ServiceInterface;
 use AGmakonts\STL\DateTime\DateTime;
 use AGmakonts\STL\String\String;
 use AGmakonts\STL\String\Text;
@@ -20,18 +21,31 @@ use Zend\EventManager\EventInterface;
  *
  * @package AdamiecRadek\DDDBricksZF2\Event
  */
-abstract class AbstractDomainEvent extends AbstractEvent implements EventInterface, EventInterface
+abstract class AbstractServiceEvent
 {
+    /**
+     * @var array
+     */
+    protected $params;
 
     /**
-     * @param \AGmakonts\DddBricks\Entity\EntityInterface $target
+     * @param \AGmakonts\DddBricks\Service\ServiceInterface $target
+     * @param array                                         $params
      */
-    public function __construct(EntityInterface $target)
+    public function __construct(ServiceInterface $target, array $params = [])
     {
         $this->target         = $target;
         $this->occurrenceTime = DateTime::get();
         $this->identifier     = Text::get(Uuid::uuid4()->toString());
+        $this->params         = $params;
     }
 
+    /**
+     * @return array
+     */
+    public function getParams()
+    {
+        return $this->params;
+    }
 
 }

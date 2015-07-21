@@ -13,7 +13,7 @@ use AGmakonts\STL\ValueObjectInterface;
 /**
  * Class AbstractDomainModificationEvent
  *
- * @package AdamiecRadek\Event
+ * @package AdamiecRadek\DDDBricksZF2\Event
  */
 abstract class AbstractDomainModificationEvent extends AbstractDomainEvent
 {

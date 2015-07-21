@@ -10,7 +10,7 @@ namespace AdamiecRadek\DDDBricksZF2\Event;
 /**
  * Class AbstractDomainCreationEvent
  *
- * @package AdamiecRadek\Event
+ * @package AdamiecRadek\DDDBricksZF2\Event
  */
 abstract class AbstractDomainCreationEvent extends AbstractDomainEvent
 {

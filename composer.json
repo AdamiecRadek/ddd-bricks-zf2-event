@@ -11,7 +11,7 @@
     ],
     "require"          : {
         "agmakonts/stl"                  : "2.0.*",
-        "agmakonts/ddd-bricks"           : "2.0.*",
+        "agmakonts/ddd-bricks"           : "2.1.*",
         "zendframework/zend-eventmanager": "2.5.*"
     },
     "autoload"         : {
