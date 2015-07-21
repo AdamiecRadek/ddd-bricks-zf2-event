@@ -11,6 +11,7 @@ namespace AdamiecRadek\DDDBricksZF2\Event;
 use AGmakonts\DddBricks\Entity\EntityInterface;
 use AGmakonts\STL\DateTime\DateTime;
 use AGmakonts\STL\String\String;
+use AGmakonts\STL\String\Text;
 use Rhumsaa\Uuid\Uuid;
 use Zend\EventManager\EventInterface;
 
@@ -49,7 +50,7 @@ abstract class AbstractDomainEvent implements EventInterface, DomainEventInterfa
     {
         $this->target         = $target;
         $this->occurrenceTime = DateTime::get();
-        $this->identifier     = String::get(Uuid::uuid4()->toString());
+        $this->identifier     = Text::get(Uuid::uuid4()->toString());
     }
 
 
