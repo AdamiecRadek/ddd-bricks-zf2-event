@@ -11,7 +11,7 @@
     ],
     "require"          : {
         "ramsey/uuid"                : "2.8.*",
-        "agmakonts/ddd-bricks"       : "1.0.*",
+        "agmakonts/ddd-bricks"       : "2.0.*",
         "agmakonts/stl"              : "2.0.*",
         "zendframework/zendframework": "2.4.*"
     },
