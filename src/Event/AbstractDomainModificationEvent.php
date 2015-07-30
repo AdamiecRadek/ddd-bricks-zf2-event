@@ -34,7 +34,7 @@ abstract class AbstractDomainModificationEvent extends AbstractDomainEvent
      *
      * @throws \InvalidArgumentException
      */
-    public function __construct(EntityInterface $target, ValueObjectInterface $oldValue, ValueObjectInterface $newValue)
+    public function __construct(EntityInterface $target, $oldValue, $newValue)
     {
 
         if ($oldValue === $newValue) {
