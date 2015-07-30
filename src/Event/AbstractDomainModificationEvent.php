@@ -29,8 +29,8 @@ abstract class AbstractDomainModificationEvent extends AbstractDomainEvent
 
     /**
      * @param \AGmakonts\DddBricks\Entity\EntityInterface $target
-     * @param \AGmakonts\STL\ValueObjectInterface         $oldValue
-     * @param \AGmakonts\STL\ValueObjectInterface         $newValue
+     * @param                                             $oldValue
+     * @param                                             $newValue
      *
      * @throws \InvalidArgumentException
      */
